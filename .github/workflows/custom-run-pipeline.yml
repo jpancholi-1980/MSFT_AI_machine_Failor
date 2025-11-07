@@ -73,8 +73,5 @@ jobs:
           if [[ "$status" != "Completed" ]]  
           then
             echo "Training Job failed or canceled"
-            echo $status
-            echo $run_id
-            echo "Training Job failed or canceled"
             exit 3
           fi

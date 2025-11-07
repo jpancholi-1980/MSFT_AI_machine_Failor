@@ -14,6 +14,7 @@ import mlflow
 
 def parse_args():
     '''Parse input arguments'''
+
     parser = argparse.ArgumentParser("prep")
     parser.add_argument("--raw_data", type=str, help="Path to raw data")
     parser.add_argument("--train_data", type=str, help="Path to train dataset")
@@ -28,6 +29,7 @@ def main(args):
 
     # Reading Data
     df = pd.read_csv(args.raw_data)
+    
     # Encoding the categorical 'Type' column
     # Note: We should ideally use one-hot encoding here as there's no inherent order between the categories
     # However, as we're using a decision tree model, label encoding also works here

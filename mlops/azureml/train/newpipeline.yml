@@ -13,8 +13,8 @@ outputs:
   train_data:
   test_data:
   model_info_output_path:
-  
-  settings:
+
+settings:
   default_datastore: azureml:workspaceblobstore
   default_compute: azureml:test-cluster
   continue_on_step_failure: false
